@@ -1,0 +1,491 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#071b2c">
+  <meta name="description" content="Splash N Dash car wash near Indoor Stadium, Upper Nihal, Bilaspur, Himachal Pradesh. Call to enquire or get directions.">
+  <title>Splash N Dash | Car Wash in Bilaspur</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --navy:#071b2c; --navy2:#0c2b42; --blue:#1d9bf0; --cyan:#6de4f5;
+      --ink:#10283b; --muted:#5e7180; --paper:#f4f8fb; --white:#fff;
+      --line:rgba(255,255,255,.14); --shadow:0 22px 70px rgba(7,27,44,.16);
+      --radius:24px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;font-family:"DM Sans",sans-serif;color:var(--ink);background:var(--paper);line-height:1.6}
+    a{color:inherit}
+    .wrap{width:min(1160px,calc(100% - 40px));margin:auto}
+    .topbar{background:#041321;color:#d8e8f3;font-size:.86rem}
+    .topbar .wrap{display:flex;justify-content:space-between;gap:12px;padding:9px 0;flex-wrap:wrap}
+    .topbar span{display:flex;align-items:center;gap:8px}
+    header{position:sticky;top:0;z-index:20;background:rgba(7,27,44,.95);backdrop-filter:blur(14px);color:#fff;border-bottom:1px solid var(--line)}
+    nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+    .brand{display:flex;align-items:center;gap:12px;text-decoration:none;font-family:Manrope,sans-serif;font-weight:800;letter-spacing:-.04em;font-size:1.13rem}
+    .brand-mark{display:grid;place-items:center;width:42px;height:42px;border-radius:14px;background:linear-gradient(135deg,var(--cyan),var(--blue));color:var(--navy);font-size:1.25rem;box-shadow:0 8px 24px #1d9bf044}
+    .brand small{display:block;font-family:"DM Sans",sans-serif;font-weight:500;font-size:.68rem;letter-spacing:.12em;color:#91b7cc;text-transform:uppercase;margin-top:-3px}
+    .navlinks{display:flex;align-items:center;gap:27px}
+    .navlinks a{text-decoration:none;font-size:.94rem;color:#d3e4ee}
+    .navlinks a:hover{color:var(--cyan)}
+    .btn{display:inline-flex;justify-content:center;align-items:center;gap:9px;padding:13px 19px;border-radius:13px;text-decoration:none;border:1px solid transparent;font-weight:700;font-size:.94rem;transition:transform .2s,box-shadow .2s,background .2s;cursor:pointer}
+    .btn:hover{transform:translateY(-2px)}
+    .btn-primary{background:linear-gradient(135deg,var(--cyan),#48b9ff);color:#061a2a;box-shadow:0 10px 26px #31b8ed33}
+    .btn-outline{border-color:#ffffff48;color:white;background:#ffffff08}
+    .btn-dark{background:var(--navy);color:#fff}
+    .hero{position:relative;overflow:hidden;background:radial-gradient(ellipse at 80% 10%,#1a7dbf55,transparent 34%),linear-gradient(125deg,#061725 0%,#0b2b43 62%,#104765 100%);color:white}
+    .hero:before{content:"";position:absolute;inset:0;opacity:.14;background-image:radial-gradient(#b9f4ff 1px,transparent 1px);background-size:28px 28px;mask-image:linear-gradient(90deg,black,transparent)}
+    .hero-grid{position:relative;display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:50px;padding:82px 0 92px}
+    .eyebrow{display:inline-flex;align-items:center;gap:9px;color:var(--cyan);font-size:.78rem;font-weight:800;text-transform:uppercase;letter-spacing:.16em}
+    .eyebrow:before{content:"";width:26px;height:2px;background:var(--cyan)}
+    h1,h2,h3{font-family:Manrope,sans-serif;line-height:1.12;letter-spacing:-.045em;margin:0}
+    h1{font-size:clamp(2.9rem,6vw,5.5rem);max-width:680px;margin:19px 0 22px}
+    h1 em{font-style:normal;color:var(--cyan)}
+    .hero-copy{font-size:1.1rem;color:#c1d7e5;max-width:560px;margin:0 0 30px}
+    .hero-actions{display:flex;gap:13px;flex-wrap:wrap}
+    .trust-row{display:flex;align-items:center;gap:15px;margin-top:33px;color:#b8cfdd;font-size:.9rem}
+    .stars{color:#ffc85b;letter-spacing:2px;font-size:1.05rem}
+    .trust-row strong{color:#fff}
+    .visual{position:relative;min-height:390px;display:grid;place-items:center}
+    .halo{position:absolute;width:min(440px,100%);aspect-ratio:1;border:1px solid #8defff35;border-radius:50%;box-shadow:0 0 0 36px #8defff08,0 0 0 74px #8defff05}
+    .car-card{position:relative;width:min(460px,100%);border:1px solid #ffffff2b;border-radius:30px;padding:15px;background:linear-gradient(145deg,#ffffff1b,#ffffff08);box-shadow:0 35px 90px #0005;transform:rotate(-2deg)}
+    .car-art{height:285px;border-radius:22px;overflow:hidden;position:relative;background:linear-gradient(180deg,#a9e9f7 0%,#4fa9d3 46%,#0b3048 100%)}
+    .car-art:before{content:"";position:absolute;left:-5%;right:-5%;bottom:0;height:47%;background:linear-gradient(160deg,#164c68,#061b2c)}
+    .water{position:absolute;inset:auto -5% 0;height:34%;background:repeating-linear-gradient(170deg,transparent 0 16px,#6de4f533 17px 19px);z-index:2}
+    .foam{position:absolute;top:16%;right:8%;width:150px;height:100px;border-radius:50%;background:#ffffff5c;filter:blur(18px)}
+    .car{position:absolute;z-index:3;left:8%;right:6%;bottom:22%;height:115px}
+    .car-body{position:absolute;left:0;right:0;bottom:14px;height:58px;border-radius:30px 35px 15px 15px;background:linear-gradient(180deg,#e8f8ff,#7fb6d2 60%,#38718e);border:2px solid #e5f7ff;box-shadow:inset 0 -8px 0 #244f6a}
+    .car-roof{position:absolute;left:25%;top:0;width:47%;height:50px;background:linear-gradient(180deg,#d8f4ff,#679bb7);clip-path:polygon(17% 0,78% 0,100% 100%,0 100%);border-top:3px solid #f0fbff}
+    .window{position:absolute;top:7px;left:31%;width:17%;height:33px;background:#12344a;clip-path:polygon(20% 0,100% 0,100% 100%,0 100%)}
+    .window.two{left:51%;width:17%;clip-path:polygon(0 0,80% 0,100% 100%,0 100%)}
+    .wheel{position:absolute;bottom:0;width:48px;height:48px;border:8px solid #102638;background:#8ba9b9;border-radius:50%;box-shadow:0 0 0 3px #e7faff}
+    .wheel.one{left:17%}.wheel.two{right:16%}
+    .spark{position:absolute;z-index:4;color:#e7fcff;font-size:1.8rem;text-shadow:0 0 16px #b5f7ff}
+    .spark.s1{top:17%;left:12%}.spark.s2{top:38%;right:10%;font-size:1.3rem}.spark.s3{bottom:18%;right:25%;font-size:1rem}
+    .visual-caption{position:absolute;bottom:0;left:0;right:0;display:flex;justify-content:space-between;gap:10px;color:#d8eff8;font-size:.83rem;padding:0 4px}
+    section{padding:84px 0}
+    .section-head{max-width:650px;margin-bottom:36px}
+    .section-head .eyebrow{color:#087fb8}
+    .section-head h2{font-size:clamp(2rem,4vw,3.2rem);margin:14px 0}
+    .section-head p{color:var(--muted);margin:0;font-size:1.04rem}
+    .feature-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .feature{background:white;border:1px solid #e0eaf0;border-radius:22px;padding:27px;box-shadow:0 12px 36px #08243b08}
+    .feature-icon{display:grid;place-items:center;width:50px;height:50px;border-radius:16px;background:#e2f8fc;color:#087eb4;font-size:1.4rem;margin-bottom:21px}
+    .feature h3{font-size:1.18rem;letter-spacing:-.025em;margin-bottom:10px}
+    .feature p{margin:0;color:var(--muted);font-size:.96rem}
+    .about{background:white}
+    .about-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:60px;align-items:center}
+    .about-art{min-height:370px;border-radius:28px;position:relative;overflow:hidden;background:linear-gradient(145deg,#d9f7fc,#82cde4 48%,#0c3550);display:grid;place-items:center}
+    .about-art:before{content:"";position:absolute;width:280px;height:280px;border:1px solid #ffffff8a;border-radius:50%;box-shadow:0 0 0 25px #ffffff20,0 0 0 52px #ffffff12}
+    .drop{position:relative;width:118px;height:150px;border-radius:70% 10% 65% 65%;transform:rotate(45deg);background:linear-gradient(145deg,#d8fcff,#22aee8 65%,#0b5793);box-shadow:inset -12px -12px 22px #083c6d55,0 20px 45px #063b5c44}
+    .drop:after{content:"";position:absolute;top:25px;left:27px;width:24px;height:45px;border-radius:50%;background:#fff9;transform:rotate(-18deg);filter:blur(2px)}
+    .about-content h2{font-size:clamp(2rem,4vw,3.1rem);margin:14px 0 20px}
+    .about-content p{color:var(--muted);font-size:1.03rem}
+    .facts{display:grid;gap:12px;margin:24px 0 28px}
+    .fact{display:flex;align-items:flex-start;gap:12px;color:#24445a}
+    .check{color:#0794c9;font-weight:900}
+    .review-section{background:#eaf3f8}
+    .review-card{background:white;border:1px solid #dce9f0;border-radius:25px;padding:32px;display:flex;align-items:center;justify-content:space-between;gap:24px;box-shadow:var(--shadow)}
+    .rating-big{font-family:Manrope,sans-serif;font-weight:800;font-size:4.4rem;letter-spacing:-.08em;line-height:1}
+    .rating-copy{color:var(--muted);font-size:.9rem;margin-top:7px}
+    .review-quote{max-width:620px;font-size:1.13rem;color:#34556a}
+    .review-quote strong{display:block;color:var(--ink);font-size:.85rem;margin-top:14px}
+
+    .booking-section{background:#eaf3f8}
+    .booking-panel{background:#fff;border:1px solid #dce9f0;border-radius:25px;padding:clamp(22px,4vw,38px);box-shadow:var(--shadow)}
+    .booking-form{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+    .form-field{display:flex;flex-direction:column;gap:7px}
+    .form-field.full{grid-column:1/-1}
+    .form-field label{font-weight:700;font-size:.9rem;color:#24445a}
+    .form-field input,.form-field select,.form-field textarea{width:100%;border:1px solid #cbdce6;border-radius:12px;padding:13px 14px;font:inherit;background:#fbfdff;color:var(--ink)}
+    .form-field input:focus,.form-field select:focus,.form-field textarea:focus{outline:3px solid #1d9bf033;border-color:var(--blue)}
+    .booking-note{font-size:.9rem;color:var(--muted);margin:18px 0 0}
+    .booking-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px}
+    .btn-whatsapp{background:#168b52;color:white}
+    .contact-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:25px}
+    .contact-info{background:var(--navy);color:white;border-radius:25px;padding:32px}
+    .contact-info h2{font-size:2.2rem;margin:12px 0}
+    .contact-info p{color:#b7d0df}
+    .contact-item{display:flex;gap:13px;margin:24px 0}
+    .contact-item .ci{width:42px;height:42px;flex:0 0 42px;border-radius:13px;display:grid;place-items:center;background:#ffffff14;color:var(--cyan)}
+    .contact-item small{display:block;color:#9bb8ca;margin-bottom:2px}
+    .contact-item a,.contact-item span{color:#fff;text-decoration:none;overflow-wrap:anywhere}
+    .map-card{background:#d9eef5;border:1px solid #c5e1ec;border-radius:25px;padding:30px;display:flex;flex-direction:column;justify-content:space-between;min-height:340px;position:relative;overflow:hidden}
+    .map-pattern{position:absolute;inset:0;opacity:.45;background-image:linear-gradient(35deg,transparent 47%,#91c7d7 48%,#91c7d7 50%,transparent 51%),linear-gradient(125deg,transparent 44%,#fff 45%,#fff 48%,transparent 49%);background-size:100px 90px,130px 110px}
+    .map-content{position:relative}
+    .map-pin{width:58px;height:58px;border-radius:19px;background:var(--blue);color:white;display:grid;place-items:center;font-size:1.55rem;box-shadow:0 12px 26px #168bcb55}
+    .map-card h3{font-size:1.65rem;margin:20px 0 10px}
+    .map-card p{color:#456a7e;max-width:350px}
+    .map-card .btn{align-self:flex-start;position:relative}
+    .cta-band{padding:0 0 84px}
+    .cta{background:linear-gradient(115deg,#0a3048,#0d5a7e);color:white;border-radius:28px;padding:42px 45px;display:flex;align-items:center;justify-content:space-between;gap:24px;position:relative;overflow:hidden}
+    .cta:after{content:"";position:absolute;width:280px;height:280px;border:1px solid #ffffff1e;border-radius:50%;right:18%;top:-170px;box-shadow:0 0 0 30px #ffffff08,0 0 0 60px #ffffff05}
+    .cta h2{font-size:clamp(1.7rem,3vw,2.5rem);margin-bottom:10px;position:relative;z-index:1}
+    .cta p{color:#c2deeb;margin:0;position:relative;z-index:1}
+    .cta .btn{position:relative;z-index:1;white-space:nowrap}
+    footer{background:#041321;color:#a9c1d0;padding:28px 0}
+    .footer-row{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}
+    .footer-brand{color:#fff;font-weight:800;font-family:Manrope,sans-serif}
+    .footer-links{display:flex;gap:18px;flex-wrap:wrap}
+    .footer-links a{text-decoration:none;font-size:.9rem}
+    .footer-links a:hover{color:var(--cyan)}
+    .fineprint{font-size:.78rem;color:#7997a9;margin-top:12px}
+    .menu-toggle{display:none;border:1px solid #ffffff40;color:white;background:transparent;border-radius:10px;padding:9px 12px;font-size:1.1rem}
+    @media(max-width:850px){
+      .hero-grid{grid-template-columns:1fr;gap:25px;padding:65px 0 75px}
+      .visual{min-height:350px}
+      .car-art{height:255px}
+      .feature-grid{grid-template-columns:1fr 1fr}
+      .about-grid,.contact-grid{grid-template-columns:1fr;gap:28px}
+      .about-art{min-height:300px}
+      .review-card{align-items:flex-start;flex-direction:column}
+      .navlinks{gap:15px}
+      .navlinks a{font-size:.88rem}
+    }
+    @media(max-width:620px){
+      .wrap{width:min(100% - 28px,1160px)}
+      .topbar .wrap{font-size:.78rem}
+      nav{min-height:68px;flex-wrap:wrap;padding:11px 0}
+      .menu-toggle{display:block}
+      .navlinks{display:none;width:100%;flex-direction:column;align-items:stretch;gap:0;padding:8px 0 12px}
+      .navlinks.open{display:flex}
+      .navlinks a{padding:12px 5px;border-top:1px solid #ffffff16}
+      .navlinks .btn{margin-top:9px}
+      .hero-grid{padding:52px 0 62px}
+      h1{font-size:clamp(2.7rem,14vw,4.2rem)}
+      .hero-copy{font-size:1rem}
+      .visual{min-height:300px}
+      .car-art{height:220px}
+      .car{transform:scale(.85);transform-origin:bottom center;left:2%;right:2%}
+      section{padding:62px 0}
+      .feature-grid{grid-template-columns:1fr}
+      .booking-form{grid-template-columns:1fr}
+      .form-field.full{grid-column:auto}
+      .feature{padding:23px}
+      .about-art{min-height:260px}
+      .review-card{padding:25px}
+      .rating-big{font-size:3.7rem}
+      .contact-info,.map-card{padding:25px}
+      .cta{padding:30px 25px;align-items:flex-start;flex-direction:column}
+      .cta-band{padding-bottom:62px}
+      .footer-row{align-items:flex-start;flex-direction:column}
+    }
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <div class="wrap">
+      <span>📍 Near Indoor Stadium, Upper Nihal, Bilaspur</span>
+      <span>★ 4.9 rating · 191 reviews listed on Google Maps</span>
+    </div>
+  </div>
+  <header>
+    <nav class="wrap" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="Splash N Dash home">
+        <span class="brand-mark" aria-hidden="true">S</span>
+        <span>Splash N Dash<small>Car Wash · Bilaspur</small></span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      <div class="navlinks" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#experience">Why visit</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#booking">Book a slot</a>
+        <a href="#contact">Find us</a>
+        <a href="https://www.instagram.com/_splash_n_dash_24_?igsh=MTNkN2RhdjFucDN0dA%3D%3D&amp;utm_source=qr" target="_blank" rel="noopener noreferrer">Instagram ↗</a>
+        <a class="btn btn-whatsapp" href="https://wa.me/918628864404" target="_blank" rel="noopener noreferrer">WhatsApp owner ↗</a>
+        <a class="btn btn-primary" href="tel:+918628864404">☎ Call 8628864404</a>
+        <a class="btn btn-outline" href="tel:+917560000270">☎ Alternative call: 7560000270</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="wrap hero-grid">
+        <div>
+          <div class="eyebrow">Your local car wash</div>
+          <h1>A fresh look for your car. <em>A brighter drive.</em></h1>
+          <p class="hero-copy">Visit Splash N Dash near Indoor Stadium in Upper Nihal, Bilaspur. Get in touch with the team to ask about your car wash needs.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="tel:+918628864404">☎ 8628864404</a>
+            <a class="btn btn-outline" href="tel:+917560000270">☎ Alternative: 7560000270</a>
+            <a class="btn btn-outline" href="https://www.google.com/maps/search/?api=1&query=Splash+N+Dash+near+Indoor+Stadium+Upper+Nihal+Bilaspur+Himachal+Pradesh+174001" target="_blank" rel="noopener noreferrer">↗ Get directions</a>
+            <a class="btn btn-whatsapp" href="https://wa.me/918628864404" target="_blank" rel="noopener noreferrer">WhatsApp us ↗</a>
+          </div>
+          <div class="trust-row">
+            <div><div class="stars" aria-label="5 stars">★★★★★</div><strong>4.9 out of 5</strong></div>
+            <span>Based on the supplied Google Maps listing</span>
+          </div>
+        </div>
+        <div class="visual" aria-label="Illustration of a freshly washed car">
+          <div class="halo"></div>
+          <div class="car-card">
+            <div class="car-art">
+              <div class="foam"></div>
+              <span class="spark s1">✦</span><span class="spark s2">✧</span><span class="spark s3">✦</span>
+              <div class="car">
+                <div class="car-roof"></div><div class="window"></div><div class="window two"></div>
+                <div class="car-body"></div><div class="wheel one"></div><div class="wheel two"></div>
+              </div>
+              <div class="water"></div>
+            </div>
+          </div>
+          <div class="visual-caption"><span>Clean look. Confident drive.</span><span>Bilaspur, HP</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="eyebrow">The Splash N Dash visit</div>
+          <h2>Car care starts with a conversation.</h2>
+          <p>Have a question about your vehicle? Contact the business directly to confirm available services, timing and pricing before you visit.</p>
+        </div>
+        <div class="feature-grid">
+          <article class="feature">
+            <div class="feature-icon">✧</div>
+            <h3>Ask about your needs</h3>
+            <p>Call the team to explain what you need for your car and ask which options are available.</p>
+          </article>
+          <article class="feature">
+            <div class="feature-icon">⌖</div>
+            <h3>Convenient local location</h3>
+            <p>Find the business near Indoor Stadium, Upper Nihal, Bilaspur, Himachal Pradesh.</p>
+          </article>
+          <article class="feature">
+            <div class="feature-icon">★</div>
+            <h3>Highly rated listing</h3>
+            <p>The supplied Google Maps listing shows a 4.9-star rating from 191 reviews.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="wrap about-grid">
+        <div class="about-art" aria-hidden="true"><div class="drop"></div></div>
+        <div class="about-content">
+          <div class="eyebrow">About Splash N Dash</div>
+          <h2>Your neighbourhood car wash in Bilaspur.</h2>
+          <p>Splash N Dash is listed as a car wash near Indoor Stadium in Upper Nihal, Bilaspur. This website gives you the essential details to contact the business and find its location.</p>
+          <div class="facts">
+            <div class="fact"><span class="check">✓</span><span>Address and directions in one place</span></div>
+            <div class="fact"><span class="check">✓</span><span>Direct phone contact for enquiries</span></div>
+            <div class="fact"><span class="check">✓</span><span>Customer rating displayed from the supplied listing</span></div>
+          </div>
+          <a class="btn btn-dark" href="https://www.google.com/maps/search/?api=1&query=Splash+N+Dash+near+Indoor+Stadium+Upper+Nihal+Bilaspur+Himachal+Pradesh+174001" target="_blank" rel="noopener noreferrer">Find Splash N Dash ↗</a>
+        </div>
+      </div>
+    </section>
+
+<section class="review-section" id="reviews">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="eyebrow">Customer feedback</div>
+          <h2>A strong rating on Google Maps.</h2>
+          <p>The rating below reflects the business information supplied for this website. Check Google Maps for the latest rating and reviews.</p>
+        </div>
+        <div class="review-card">
+          <div>
+            <div class="rating-big">4.9<span style="font-size:1.8rem;color:#718795">/5</span></div>
+            <div class="stars">★★★★★</div>
+            <div class="rating-copy">191 reviews listed in the supplied information</div>
+          </div>
+          <div class="review-quote">
+            “Great attention to detail, friendly service, and good value for money.”
+            <strong>Review excerpt supplied from the Google Maps listing</strong>
+            <a href="https://www.google.com/maps/search/?api=1&query=Splash+N+Dash+near+Indoor+Stadium+Upper+Nihal+Bilaspur+Himachal+Pradesh+174001" target="_blank" rel="noopener noreferrer">Read current reviews on Google Maps ↗</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="https://unpkg.com/@vanira/sdk@latest/dist/vanira-sdk.js"
+  widget-id="5250305c-1033-4605-8dc9-635e4a7f9789"
+  data-pk-key="pk_live_d3242779-1256-43bb-b5ff-aaed4832750e" defer></script>
+    
+   <script src="https://unpkg.com/@vanira/sdk@latest/dist/vanira-sdk.js"
+  widget-id="5250305c-1033-4605-8dc9-635e4a7f9789"
+  data-pk-key="pk_live_d3242779-1256-43bb-b5ff-aaed4832750e" position="bottom-left" defer></script>
+
+
+    <section class="booking-section" id="booking">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="eyebrow">Appointment request</div>
+          <h2>Book a preferred time slot.</h2>
+          <p>Send your details to the owner on WhatsApp. Your booking is a request until the owner confirms the time.</p>
+        </div>
+        <div class="booking-panel">
+          <form class="booking-form" id="bookingForm">
+            <div class="form-field"><label for="clientName">Your name *</label><input id="clientName" name="clientName" autocomplete="name" required maxlength="100" placeholder="Enter your name"></div>
+            <div class="form-field"><label for="clientPhone">Your phone number *</label><input id="clientPhone" name="clientPhone" type="tel" autocomplete="tel" required maxlength="20" placeholder="Enter contact number"></div>
+            <div class="form-field"><label for="vehicleType">Vehicle type *</label><select id="vehicleType" name="vehicleType" required><option value="">Select vehicle</option><option>Hatchback</option><option>Sedan</option><option>SUV</option><option>Motorcycle / Scooter</option><option>Other</option></select></div>
+            <div class="form-field"><label for="vehicleNumber">Vehicle number (optional)</label><input id="vehicleNumber" name="vehicleNumber" maxlength="20" placeholder="e.g. HP 00 AB 1234"></div>
+            <div class="form-field"><label for="bookingDate">Preferred date *</label><input id="bookingDate" name="bookingDate" type="date" required></div>
+            <div class="form-field"><label for="bookingTime">Preferred time slot *</label><select id="bookingTime" name="bookingTime" required><option value="">Choose a time</option><option>9:00 AM</option><option>9:30 AM</option><option>10:00 AM</option><option>10:30 AM</option><option>11:00 AM</option><option>11:30 AM</option><option>12:00 PM</option><option>12:30 PM</option><option>1:00 PM</option><option>1:30 PM</option><option>2:00 PM</option><option>2:30 PM</option><option>3:00 PM</option><option>3:30 PM</option><option>4:00 PM</option><option>4:30 PM</option><option>5:00 PM</option><option>5:30 PM</option><option>6:00 PM</option></select></div>
+            <div class="form-field full"><label for="bookingNotes">Service requested / notes (optional)</label><textarea id="bookingNotes" name="bookingNotes" rows="3" maxlength="500" placeholder="Tell the owner what you need"></textarea></div>
+            <div class="form-field full"><label><input type="checkbox" id="consent" required style="width:auto;margin-right:8px">I agree to share these booking details with Splash N Dash to arrange an appointment. *</label></div>
+            <div class="form-field full"><div class="booking-actions"><button class="btn btn-whatsapp" type="submit">Request booking on WhatsApp ↗</button><button class="btn btn-dark" id="downloadBookings" type="button">Download saved bookings CSV</button></div><p class="booking-note" id="bookingStatus" role="status">This website cannot confirm live slot availability. The owner must confirm your request. A CSV file will download for your records; saved bookings are stored only in this browser.</p></div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="eyebrow">Contact and location</div>
+          <h2>Ready to find us?</h2>
+          <p>Call ahead to confirm availability, current hours, services and prices.</p>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-info">
+            <div class="eyebrow">Get in touch</div>
+            <h2>We’re easy to reach.</h2>
+            <p>Use the phone number or open the location in Google Maps before setting off.</p>
+            <div class="contact-item">
+              <div class="ci">☎</div><div><small>Phone</small><a href="tel:+918628864404">8628864404</a></div>
+            </div>
+            <div class="contact-item">
+              <div class="ci">☎</div><div><small>Alternative phone (calls only)</small><a href="tel:+917560000270">7560000270</a></div>
+            </div>
+            <div class="contact-item">
+              <div class="ci">⌖</div><div><small>Address</small><span>Near Indoor Stadium, Upper Nihal,<br>Bilaspur, Himachal Pradesh 174001</span></div>
+            </div>
+            <div class="contact-item">
+              <div class="ci">◷</div><div><small>Hours</small><span>Supplied listing: open until 7 PM<br>Please confirm today's hours by phone.</span></div>
+            </div>
+          </div>
+          <div class="map-card">
+            <div class="map-pattern"></div>
+            <div class="map-content">
+              <div class="map-pin">⌖</div>
+              <h3>Splash N Dash, Bilaspur</h3>
+              <p>Near Indoor Stadium, Upper Nihal, Bilaspur, Himachal Pradesh 174001</p>
+            </div>
+            <a class="btn btn-dark" href="https://www.google.com/maps/search/?api=1&query=Splash+N+Dash+near+Indoor+Stadium+Upper+Nihal+Bilaspur+Himachal+Pradesh+174001" target="_blank" rel="noopener noreferrer">Open Google Maps ↗</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="cta-band">
+      <div class="wrap">
+        <div class="cta">
+          <div><h2>Have a car wash question?</h2><p>Call Splash N Dash to discuss your requirements before visiting.</p></div>
+          <div style="display:flex;gap:10px;flex-wrap:wrap"><a class="btn btn-whatsapp" href="https://wa.me/918628864404" target="_blank" rel="noopener noreferrer">WhatsApp owner ↗</a><a class="btn btn-primary" href="tel:+918628864404">Call 8628864404 ↗</a><a class="btn btn-outline" href="tel:+917560000270">Alternative call 7560000270 ↗</a></div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div class="footer-row">
+        <div><div class="footer-brand">Splash N Dash</div><div style="font-size:.85rem">Car wash · Bilaspur, Himachal Pradesh</div></div>
+        <div class="footer-links"><a href="#about">About</a><a href="#experience">Why visit</a><a href="#reviews">Reviews</a><a href="#contact">Contact</a><a href="https://www.instagram.com/_splash_n_dash_24_?igsh=MTNkN2RhdjFucDN0dA%3D%3D&amp;utm_source=qr" target="_blank" rel="noopener noreferrer">Instagram ↗</a></div>
+      </div>
+      <div class="fineprint">Website draft based on the business details supplied. Services, prices, opening hours and social account ownership should be confirmed with the business before publication.</div>
+    </div>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+    const menuToggle = document.getElementById('menuToggle');
+    const navLinks = document.getElementById('navLinks');
+    menuToggle.addEventListener('click', () => {
+      const open = navLinks.classList.toggle('open');
+      menuToggle.setAttribute('aria-expanded', String(open));
+      menuToggle.textContent = open ? '✕' : '☰';
+    });
+    navLinks.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
+      navLinks.classList.remove('open');
+      menuToggle.setAttribute('aria-expanded', 'false');
+      menuToggle.textContent = '☰';
+    }));
+
+    const bookingForm = document.getElementById('bookingForm');
+    const bookingDate = document.getElementById('bookingDate');
+    const bookingStatus = document.getElementById('bookingStatus');
+    const today = new Date();
+    bookingDate.min = `${today.getFullYear()}-${String(today.getMonth()+1).padStart(2,'0')}-${String(today.getDate()).padStart(2,'0')}`;
+    const savedBookingsKey = 'splashNDashBookings';
+    function readBookings() {
+      try { return JSON.parse(localStorage.getItem(savedBookingsKey) || '[]'); }
+      catch { return []; }
+    }
+    function csvCell(value) { return '"' + String(value ?? '').replace(/"/g, '""') + '"'; }
+    function downloadCsv(rows, filename) {
+      const headers = ['Booking ID','Created At','Client Name','Client Phone','Vehicle Type','Vehicle Number','Preferred Date','Preferred Time','Notes','Status'];
+      const content = [headers, ...rows.map(r => headers.map(h => r[({'Booking ID':'id','Created At':'createdAt','Client Name':'name','Client Phone':'phone','Vehicle Type':'vehicle','Vehicle Number':'vehicleNumber','Preferred Date':'date','Preferred Time':'time','Notes':'notes','Status':'status'})[h]]))].map(row => row.map(csvCell).join(',')).join('\r\n');
+      const blob = new Blob(['\ufeff', content], {type:'text/csv;charset=utf-8;'});
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a'); a.href = url; a.download = filename; document.body.appendChild(a); a.click(); a.remove(); URL.revokeObjectURL(url);
+    }
+    function downloadBookingPdf(record) {
+      if (!window.jspdf || !window.jspdf.jsPDF) return false;
+      const { jsPDF } = window.jspdf;
+      const doc = new jsPDF({ unit: 'mm', format: 'a4' });
+      const pageWidth = doc.internal.pageSize.getWidth();
+      doc.setFillColor(8, 27, 45); doc.rect(0, 0, pageWidth, 38, 'F');
+      doc.setTextColor(255,255,255); doc.setFont('helvetica','bold'); doc.setFontSize(20);
+      doc.text('SPLASH N DASH', 18, 17);
+      doc.setFont('helvetica','normal'); doc.setFontSize(11); doc.text('CAR WASH - BOOKING REQUEST', 18, 27);
+      doc.setTextColor(25,40,55); doc.setFont('helvetica','bold'); doc.setFontSize(15); doc.text('Booking Details', 18, 52);
+      doc.setDrawColor(210,222,230); doc.line(18, 57, pageWidth-18, 57);
+      const rows = [
+        ['Booking ID', record.id], ['Submitted', record.createdAt], ['Customer name', record.name],
+        ['Customer phone', record.phone], ['Vehicle type', record.vehicle],
+        ['Vehicle number', record.vehicleNumber || 'Not provided'], ['Preferred date', record.date],
+        ['Preferred time', record.time], ['Service / notes', record.notes || 'None'],
+        ['Booking status', record.status]
+      ];
+      let y = 68;
+      rows.forEach(([label, value], i) => {
+        const lines = doc.splitTextToSize(String(value), 112);
+        if (i % 2 === 0) { doc.setFillColor(241,247,250); doc.rect(18, y-6, pageWidth-36, Math.max(10, lines.length*6+4), 'F'); }
+        doc.setFont('helvetica','bold'); doc.setFontSize(10); doc.setTextColor(45,65,80); doc.text(label, 22, y);
+        doc.setFont('helvetica','normal'); doc.setTextColor(20,35,45); doc.text(lines, 78, y);
+        y += Math.max(10, lines.length*6+4);
+      });
+      doc.setFontSize(9); doc.setTextColor(90,105,115);
+      doc.text('This is a booking request, not a confirmed appointment. Owner confirmation is required.', 18, Math.min(y+10, 280));
+      doc.save(`${record.id}-booking-details.pdf`);
+      return true;
+    }
+
+    bookingForm.addEventListener('submit', event => {
+      event.preventDefault();
+      if (!bookingForm.reportValidity()) return;
+      const data = new FormData(bookingForm);
+      const record = {
+        id: 'SND-' + Date.now(), createdAt: new Date().toLocaleString(),
+        name: String(data.get('clientName')).trim(), phone: String(data.get('clientPhone')).trim(),
+        vehicle: String(data.get('vehicleType')), vehicleNumber: String(data.get('vehicleNumber') || '').trim(),
+        date: String(data.get('bookingDate')), time: String(data.get('bookingTime')),
+        notes: String(data.get('bookingNotes') || '').trim(), status: 'Pending owner confirmation'
+      };
+      const bookings = readBookings(); bookings.push(record);
+      try { localStorage.setItem(savedBookingsKey, JSON.stringify(bookings)); }
+      catch { bookingStatus.textContent = 'Browser storage is unavailable. WhatsApp will still open with your details.'; }
+      const pdfReady = downloadBookingPdf(record);
+      const message = `Hello Splash N Dash, I would like to request a car wash booking.\n\nBooking ID: ${record.id}\nCustomer: ${record.name}\nPhone: ${record.phone}\nVehicle: ${record.vehicle}\nVehicle number: ${record.vehicleNumber || 'Not provided'}\nPreferred date: ${record.date}\nPreferred time: ${record.time}\nService / notes: ${record.notes || 'None'}\n\n${pdfReady ? 'I have downloaded the booking details PDF and will attach it to this WhatsApp message.' : 'Please note my booking details above. PDF generation was unavailable in this browser.'}\nPlease confirm whether this slot is available.`;
+      bookingStatus.textContent = pdfReady ? 'Booking saved in this browser and the formatted PDF has been downloaded. WhatsApp is opening with the details; attach the downloaded PDF and tap Send. The owner must confirm the slot.' : 'Booking saved in this browser. WhatsApp is opening with the details. PDF library could not load, so please try again with an internet connection. The owner must confirm the slot.';
+      window.open('https://wa.me/918628864404?text=' + encodeURIComponent(message), '_blank', 'noopener,noreferrer');
+    });
+    document.getElementById('downloadBookings').addEventListener('click', () => {
+      const bookings = readBookings();
+      if (!bookings.length) { bookingStatus.textContent = 'No bookings are saved in this browser yet.'; return; }
+      downloadCsv(bookings, 'splash-n-dash-bookings.csv');
+      bookingStatus.textContent = `Downloaded ${bookings.length} booking(s) saved in this browser.`;
+    });
+
+  </script>
+</body>
+</html>
